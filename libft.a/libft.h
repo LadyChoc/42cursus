@@ -1,0 +1,14 @@
+int ft_isdigit(int c);
+int	ft_isalpha(int c);
+int	ft_isalnum(int c);
+int ft_isascii(int c);
+int ft_isprint(int c);
+int ft_strlen(int c);
+void    *ft_memset(void *str, int c, unsigned long n);
+void ft_bzero(void *s, unsigned long n);
+void *memcpy(void *dest, const void * src, unsigned long n);
+void    *ft_memmove(void *str1, const void *str2, unsigned long n);
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+int ft_toupper(int c);
+int ft_tolower(int c);
