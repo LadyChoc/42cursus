@@ -12,3 +12,5 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
 int ft_toupper(int c);
 int ft_tolower(int c);
+char *ft_strchr (const char *s, int c);
+char *ft_strrchr(char *s, int c);

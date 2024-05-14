@@ -14,27 +14,27 @@
 
 char *ft_strrchr(char *s, int c)
 {
-    int i;
-    int p;
+	int i;
+	int p;
 
-    char* result;
-
-    i = 0;
-    while (s[i] != '\0')
-    {
-        if (s[i] == c)
-            p = i;
-        i++;
-    }
-    if (p)
-        return(s + i);
-    else
-        return(NULL);
+	p = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+			p = i;
+		i++;
+	}
+	if (p)
+		return(s + p);
+	else
+		return(NULL);
 }
-
+/*
 int main ()
 {
     char test [] = "Esto es un tester.";
-    printf("Con ft_strrchr: %s \n", ft_strrchr(test, 'e'));
-    printf("Con strrchr: %s \n", strrchr(test, 'e'));
+    printf("Con strrchr: %s \n", strrchr(test, ' '));
+    printf("Con ft_strrchr: %s \n", ft_strrchr(test, ' '));
 }
+*/
