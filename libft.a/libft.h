@@ -9,6 +9,7 @@
 /*   Updated: 2024/05/20 18:38:05 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stddef.h>
 
 int				ft_isdigit(int c);
 int				ft_isalpha(int c);
