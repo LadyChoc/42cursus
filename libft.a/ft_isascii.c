@@ -11,19 +11,19 @@
 /* ************************************************************************** */
 #include <stdio.h>
 
-int ft_isascii (int c)
+int	ft_isascii(int c)
 {
-    if (c >= 00 && c <= 255)
-    {
-        return (c);
-    }
-    return (0);
+	if (c >= 00 && c <= 255)
+	{
+		return (c);
+	}
+	return (0);
 }
 /*
 int main (void)
 {
-    int c = 300;
-    printf("%d", ft_isascii(c));
-    return (0);
+	int c = 300;
+	printf("%d", ft_isascii(c));
+	return (0);
 }
 */

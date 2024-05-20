@@ -12,18 +12,19 @@
 #include <ctype.h>
 #include <stdio.h>
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-    {
-        c -= 32;
-    }
-    return (c);
+	if (c >= 'a' && c <= 'z')
+	{
+		c -= 32;
+	}
+	return (c);
 }
-
+/*
 int main ()
 {
-    int test = '=';
-    printf("ft_toupper: %c \n", ft_toupper(test));
-    printf("toupper: %c \n", toupper(test));
+	int test = '=';
+	printf("ft_toupper: %c \n", ft_toupper(test));
+	printf("toupper: %c \n", toupper(test));
 }
+*/

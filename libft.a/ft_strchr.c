@@ -12,26 +12,26 @@
 #include <string.h>
 #include <stdio.h>
 
-char *ft_strchr (const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        if (s[i] == c)
-        {
-            return(s + i);
-        }
-        i++;
-    }
-    return(NULL);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
+		i++;
+	}
+	return (NULL);
 }
 /*
 int main ()
 {
-    char test [] = "Esto es un 7est.";
-    printf("Con ft_strchr: %s \n", ft_strchr(test, '.'));
-    printf("Con strchr: %s \n", strchr(test, '.'));
+	char test [] = "Esto es un 7est.";
+	printf("Con ft_strchr: %s \n", ft_strchr(test, '.'));
+	printf("Con strchr: %s \n", strchr(test, '.'));
 }
 */

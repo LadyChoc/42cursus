@@ -24,6 +24,6 @@ int	main (void)
 {
 	int c = 57;
 	printf("%d", ft_isalnum(c));
-    return (0);
+	return (0);
 }
 */

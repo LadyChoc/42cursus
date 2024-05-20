@@ -12,33 +12,30 @@
 #include <string.h>
 #include <stdio.h>
 
-char *ft_strrchr(char *s, int c)
+char	*ft_strrchr(char *s, int c)
 {
-	int i;
-	int p;
+	int		i;
+	int		p;
+	char	*result;
 
-
-    char* result;
-
-    i = 0;
-    p = 0;
-    while (s[i] != '\0')
-    {
-        if (s[i] == c)
-            p = i;
-        i++;
-    }
-    if (p)
-        return(s + p);
-    else
-        return(NULL);
+	i = 0;
+	p = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+			p = i;
+		i++;
+	}
+	if (p)
+		return (s + p);
+	else
+		return (NULL);
 }
 /*
 int main ()
 {
-    char test [] = "Esto es un tester.";
-    printf("Con strrchr: %s \n", strrchr(test, ' '));
-    printf("Con ft_strrchr: %s \n", ft_strrchr(test, ' '));
+	char test [] = "Esto es un tester.";
+	printf("Con strrchr: %s \n", strrchr(test, ' '));
+	printf("Con ft_strrchr: %s \n", ft_strrchr(test, ' '));
 }
 */
-

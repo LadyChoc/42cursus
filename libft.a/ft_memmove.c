@@ -22,9 +22,7 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 	i = 0;
 	dest = str1;
 	if (!src)
-	{
 		return (dest);
-	}
 	if (src > dest)
 	{
 		while (i < n)
@@ -32,15 +30,15 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 			dest[i] = src[i];
 			i++;
 		}
-	} else 
+	}
+	else
 	{
 		while (n > 0)
 		{
 			n--;
-			dest[n] = src[n];			
+			dest[n] = src[n];
 		}
 	}
-
 	return (dest);
 }
 /*

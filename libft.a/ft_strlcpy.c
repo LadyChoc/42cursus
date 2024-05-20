@@ -31,23 +31,23 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 /*
 int main (void)
 {
-    char* src = "hola mundo";
-    char* dst = malloc(sizeof(char) * 20);
+	char* src = "hola mundo";
+	char* dst = malloc(sizeof(char) * 20);
 	char* dst2 = malloc(sizeof(char) * 20);
-    printf("%lu\n", strlcpy(dst, src, 15));
-    printf("%s\n\n", dst);
+	printf("%lu\n", strlcpy(dst, src, 15));
+	printf("%s\n\n", dst);
 
 	printf("%x\n", ft_strlcpy(dst2, src, 15));
-    printf("%s\n", dst);
+	printf("%s\n", dst);
 
 	src = "hola";
 	printf("%lu\n", strlcpy(dst, src, 2));
-    printf("%s\n", dst);
+	printf("%s\n", dst);
 	printf("%s\n\n", &dst[4]);
 
 	printf("%x\n", ft_strlcpy(dst2, src, 2));
 	printf("%s\n", dst);
 	printf("%s\n\n", &dst[4]);
-    return (0);
+	return (0);
 }
 */

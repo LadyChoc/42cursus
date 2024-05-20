@@ -9,11 +9,10 @@
 /*   Updated: 2024/03/25 13:53:02 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') 
-	|| (c >= 'a' && c <= 'z'))
+	if ((c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z'))
 	{
 		return (c);
 	}
@@ -22,8 +21,8 @@ int	ft_isalpha(int c)
 /*
 int	main (void)
 {
-    int c = 75;
-    printf("%d", ft_isalpha(c));
-    return (0);
+	int c = 75;
+	printf("%d", ft_isalpha(c));
+	return (0);
 }
 */

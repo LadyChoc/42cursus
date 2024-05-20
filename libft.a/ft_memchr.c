@@ -11,22 +11,23 @@
 /* ************************************************************************** */
 #include <stddef.h>
 
-void *memchr(void *s, int c, size_t n)
+void	*memchr(void *s, int c, size_t n)
 {
-    int i;
-    unsigned char *uns = s;
+	int				i;
+	unsigned char	*uns;
 
-    i = 0;
-    while(i <= n)
-    {
-        if (uns[i] == (unsigned char)c)
-            return(uns + i);
-        i++;
-    }
-    return (NULL);
+	*uns = s;
+	i = 0;
+	while (i <= n)
+	{
+		if (uns[i] == (unsigned char)c)
+			return (uns + i);
+		i++;
+	}
+	return (NULL);
 }
 
 int main ()
 {
-    
+	
 }
