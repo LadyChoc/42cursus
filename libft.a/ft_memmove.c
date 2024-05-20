@@ -24,13 +24,11 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 	if (!src)
 		return (dest);
 	if (src > dest)
-	{
 		while (i < n)
 		{
 			dest[i] = src[i];
 			i++;
 		}
-	}
 	else
 	{
 		while (n > 0)
@@ -53,7 +51,7 @@ int main () {
 
 	char dest1[]  = "oldstring";
 	printf("Before memmove dest = %s, src = %s\n", dest1, src);
-	memmove(dest1, src, 30);
+	memmove(dest1, src, 10);
 	printf("After memmove dest = %s, src = %s\n", dest1, src);
 
 	// Que src y dest estén solapadas
