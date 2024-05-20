@@ -10,12 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
-
-//For main
 #include <stdio.h>
 #include <string.h>
 
-void *ft_memchr(void *s, int c, size_t n)
+void	*ft_memchr(void *s, int c, size_t n)
 {
 	int				i;
 	unsigned char	*uns;
@@ -30,7 +28,7 @@ void *ft_memchr(void *s, int c, size_t n)
     }
     return (NULL);
 }
-
+/*
 int main ()
 {
     char * test = "hola";
@@ -64,3 +62,4 @@ int main ()
 	printf("FT: %s\n", (char*) ft_memchr(NULL, 'c', 5));
 
 }
+*/
