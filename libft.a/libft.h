@@ -33,3 +33,11 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(char *str, char *to_find, size_t len);
 int				ft_atoi(char *str);
 void			*ft_calloc(size_t nmemb, size_t size);
+char	        *ft_strdup(char *s);
+char	        *ft_substr(char *s, unsigned int start, size_t len);
+char			*ft_strjoin(char *s1, char *s2);
+
+void			ft_putchar_fd(char c, int fd);
+void			ft_putstr_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
