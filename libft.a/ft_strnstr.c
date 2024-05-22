@@ -12,16 +12,16 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
-#include <bsd/string.h>
+// #include <bsd/string.h>
 
-int	check_word(char *str, char *to_find, int i, int n)
+int	check_word(char *str, char *to_find, unsigned int i, size_t n)
 {
-	int	j;
-	int	k;
+	unsigned int	j;
+	unsigned int	k;
 
 	j = 0;
 	k = i;
-	while ((k < n || n < 0) && to_find[j] != '\0')
+	while (k < n&& to_find[j] != '\0')
 	{
 		if (str[k] != to_find[j])
 			return (-1);
@@ -30,18 +30,19 @@ int	check_word(char *str, char *to_find, int i, int n)
 	}
 	if (to_find[j] == '\0')
 		return (0);
+    return (-1);
 }
 
 char	*ft_strnstr(char *str, char *to_find, size_t n)
 {
-	int	i;
+	unsigned int	i;
 
 	if (to_find[0] == '\0')
 	{
 		return (str);
 	}
 	i = 0;
-	while ((i < n || n < 0) && str[i] != 0)
+	while (i < n && str[i] != 0)
 	{
 		if (str[i] == to_find[0])
 		{

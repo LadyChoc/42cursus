@@ -9,6 +9,7 @@
 /*   Updated: 2024/05/20 18:09:52 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stddef.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

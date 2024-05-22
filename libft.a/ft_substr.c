@@ -15,7 +15,7 @@
 char	*ft_substr(char *s, unsigned int start, size_t len)
 {
 	char	*str;
-	int		i;
+	unsigned int		i;
 
 	if((str = malloc((len + 1) * sizeof(char))) == 0)
 		return (NULL);

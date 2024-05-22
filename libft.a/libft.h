@@ -16,7 +16,7 @@ int				ft_isalpha(int c);
 int				ft_isalnum(int c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
-int	            ft_strlen(char *str);
+int				ft_strlen(char *str);
 void			*ft_memset(void *str, int c, unsigned long n);
 void			ft_bzero(void *s, unsigned long n);
 void			*ft_memcpy(void *dest, const void *src, unsigned long n);
