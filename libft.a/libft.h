@@ -9,7 +9,11 @@
 /*   Updated: 2024/05/20 18:38:05 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stddef.h>
 
 int				ft_isdigit(int c);
 int				ft_isalpha(int c);
@@ -41,3 +45,5 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+
+#endif
