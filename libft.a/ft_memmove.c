@@ -15,20 +15,22 @@
 
 void	*ft_memmove(void *str1, const void *str2, size_t n)
 {
-	unsigned int			i;
-	char		*dest;
-	const char	*src = str2;
+	unsigned int		i;
+	char				*dest;
+	const char			*src = str2;
 
+	if (str1 == 0 && str2 == 0)
+		return (NULL);
 	i = 0;
 	dest = str1;
-	if (!src)
-		return (dest);
 	if (src > dest)
+	{
 		while (i < n)
 		{
 			dest[i] = src[i];
 			i++;
 		}
+	}
 	else
 	{
 		while (n > 0)

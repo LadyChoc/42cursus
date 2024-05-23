@@ -16,28 +16,28 @@
 void	*ft_memchr(void *s, int c, size_t n)
 {
 	unsigned int				i;
-	unsigned char	*uns;
+	unsigned char				*uns;
 
 	uns = s;
 	i = 0;
-	while(i < n)
-    {
-        if (uns[i] == (unsigned char)c)
-            return(uns + i);
-        i++;
-    }
-    return (NULL);
+	while (i < n)
+	{
+		if (uns[i] == (unsigned char)c)
+			return (uns + i);
+		i++;
+	}
+	return (NULL);
 }
 /*
 int main ()
 {
-    char * test = "hola";
+	char * test = "hola";
 
 	// Busca la primera letra
-    printf("Original: %s\n", (char*) memchr(test, 'h', 5));
-    printf("FT: %s\n", (char*) ft_memchr(test, 'h', 5));
+	printf("Original: %s\n", (char*) memchr(test, 'h', 5));
+	printf("FT: %s\n", (char*) ft_memchr(test, 'h', 5));
 	// Busca la ultima letra
-    printf("Original: %s\n", (char*) memchr(test, 'a', 5));
+	printf("Original: %s\n", (char*) memchr(test, 'a', 5));
 	printf("FT: %s\n", (char*) ft_memchr(test, 'a', 5));
 
 	// Busca el caracter nulo del string
@@ -49,7 +49,7 @@ int main ()
 	printf("FT: %s\n", (char*) ft_memchr(test, 'h', 0));
 
 	// Busca una letra que no esta
-    printf("Original: %s\n", (char*) memchr(test, 'c', 5));
+	printf("Original: %s\n", (char*) memchr(test, 'c', 5));
 	printf("FT: %s\n", (char*) ft_memchr(test, 'c', 5));
 
 	char * notInitialized;

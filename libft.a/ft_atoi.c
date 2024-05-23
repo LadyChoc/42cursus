@@ -16,30 +16,26 @@
 // Calcula el signo del string, ignorando todos los caracteres "espacio" previos
 int	calculate_sign(int *index, char *str)
 {
-	int	j;
 	int	i;
-	int	res;
 
 	i = *index;
-	j = 0;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
 		|| str[i] == '\r' || str[i] == '\f')
 	{
 		i++;
 	}
-	while (str[i] == '+' || str[i] == '-')
+	if (str[i] == '-')
 	{
-		if (str[i] == '-')
-		{
-			j++;
-		}
+		i++;
+		*index = i;
+		return (-1);
+	}
+	else if (str[i] == '+')
+	{
 		i++;
 	}
 	*index = i;
-	res = 1;
-	if ((j % 2) != 0)
-		res = -1;
-	return (res);
+	return (1);
 }
 
 int	ft_atoi(char *str)
@@ -50,7 +46,19 @@ int	ft_atoi(char *str)
 
 	i = 0;
 	res = 0;
-	sign = calculate_sign(&i, str);
+	sign = 1;
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
+		|| str[i] == '\r' || str[i] == '\f')
+	{
+		i++;
+	}
+	if (str[i] == '-')
+	{
+		i++;
+		sign = -1;
+	}
+	else if (str[i] == '+')
+		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = res * 10 + (str[i] - '0');
@@ -66,34 +74,6 @@ int	main(void)
 
 	str = "  -123a";
 	printf("%d\n", atoi(str));
-	printf("%d\n", ft_atoi(str));
-
-	str = "    	 	--++++-123a";
-	printf("-123\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "    	 	--++++-1y23a";
-	printf("-1\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "";
-	printf("0\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "    	";
-	printf("0\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "v5";
-	printf("0\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "-v";
-	printf("0\n");
-	printf("%d\n", ft_atoi(str));
-
-	str = "-";
-	printf("0\n");
 	printf("%d\n", ft_atoi(str));
 }
 */

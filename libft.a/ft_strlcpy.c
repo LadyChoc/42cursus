@@ -11,21 +11,26 @@
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stdio.h>
+// #include <bsd/string.h>
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (src[i] != '\0' && i + 1 < size)
 	{
-		if (i < (size - 1))
-		{
-			dest[i] = src[i];
-		}
+		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	if (i < size)
+	{
+		dest[i] = '\0';
+	}
+	while (src[i] != '\0')
+	{
+		i++;
+	}
 	return (i);
 }
 /*

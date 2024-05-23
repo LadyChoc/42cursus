@@ -21,6 +21,8 @@ char	*ft_strdup(char *s)
 
 	slen = ft_strlen(s) + 1;
 	str = malloc (slen * sizeof(char));
+	if(str == 0)
+		return (NULL);
 	ft_memcpy(str, s, slen);
 	return (str);
 }

@@ -21,6 +21,8 @@ char	*ft_strjoin(char *s1, char *s2)
 	int const	s2_len = ft_strlen(s2);
 
 	str = malloc((s1_len + s2_len + 1) * sizeof(char));
+	if (str == 0)
+		return (NULL);
 	i = 0;
 	ft_memcpy(str, s1, s1_len);
 	i += s1_len;

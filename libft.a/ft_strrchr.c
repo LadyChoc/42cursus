@@ -18,14 +18,18 @@ char	*ft_strrchr(char *s, int c)
 	int		p;
 
 	i = 0;
-	p = 0;
+	p = -1;
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 			p = i;
 		i++;
 	}
-	if (p)
+	if (s[i] == c)
+	{
+		p = i;
+	}
+	if (p > -1)
 		return (s + p);
 	else
 		return (NULL);

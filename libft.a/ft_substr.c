@@ -10,15 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_substr(char *s, unsigned int start, size_t len)
 {
-	char	*str;
+	char				*str;
 	unsigned int		i;
 
-	if((str = malloc((len + 1) * sizeof(char))) == 0)
+	str = malloc((len + 1) * sizeof(char));
+	if (str == 0)
 		return (NULL);
+	if (ft_strlen(s) < start)
+	{
+		len = 0;
+	}
 	i = 0;
 	while (s[start] != '\0' && i < len)
 	{
@@ -27,12 +33,14 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 		start++;
 	}
 	str[i] = '\0';
-	return(str);
+	return (str);
 }
 
+/*
 int main ()
 {
 	char *str = "Esto es una prueba";
 	printf("%s\n", ft_substr(str, 1, 15));
 	return(0);
 }
+*/

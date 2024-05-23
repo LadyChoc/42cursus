@@ -21,7 +21,7 @@ int	check_word(char *str, char *to_find, unsigned int i, size_t n)
 
 	j = 0;
 	k = i;
-	while (k < n&& to_find[j] != '\0')
+	while (k < n && to_find[j] != '\0')
 	{
 		if (str[k] != to_find[j])
 			return (-1);
@@ -30,7 +30,7 @@ int	check_word(char *str, char *to_find, unsigned int i, size_t n)
 	}
 	if (to_find[j] == '\0')
 		return (0);
-    return (-1);
+	return (-1);
 }
 
 char	*ft_strnstr(char *str, char *to_find, size_t n)

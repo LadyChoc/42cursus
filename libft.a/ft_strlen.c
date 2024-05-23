@@ -9,9 +9,11 @@
 /*   Updated: 2024/04/24 14:02:13 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strlen(char *str)
+#include <stddef.h>
+
+size_t	ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')
