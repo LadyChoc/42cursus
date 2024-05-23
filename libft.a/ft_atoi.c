@@ -13,31 +13,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Calcula el signo del string, ignorando todos los caracteres "espacio" previos
-int	calculate_sign(int *index, char *str)
-{
-	int	i;
-
-	i = *index;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\r' || str[i] == '\f')
-	{
-		i++;
-	}
-	if (str[i] == '-')
-	{
-		i++;
-		*index = i;
-		return (-1);
-	}
-	else if (str[i] == '+')
-	{
-		i++;
-	}
-	*index = i;
-	return (1);
-}
-
 int	ft_atoi(char *str)
 {
 	int	res;
