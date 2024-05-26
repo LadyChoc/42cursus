@@ -9,8 +9,7 @@
 /*   Updated: 2024/04/24 14:01:23 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-// #include <bsd/string.h>
+#include "libft.h"
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {

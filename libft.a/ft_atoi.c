@@ -9,9 +9,7 @@
 /*   Updated: 2024/05/20 19:44:15 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {
@@ -47,7 +45,7 @@ int	main(void)
 {
 	char	*str;
 
-	str = "  -123a";
+	str = "  -tufgi 123a";
 	printf("%d\n", atoi(str));
 	printf("%d\n", ft_atoi(str));
 }

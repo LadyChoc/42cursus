@@ -9,6 +9,7 @@
 /*   Updated: 2024/05/22 18:47:31 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {
@@ -23,5 +24,5 @@ void	ft_putendl_fd(char *s, int fd)
 			i++;
 		}
 	}
-	write(fd, '\n', 1);
+	write(fd, "\n", 1);
 }

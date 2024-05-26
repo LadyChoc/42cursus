@@ -9,14 +9,13 @@
 /*   Updated: 2024/04/24 13:59:04 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, void *src, size_t n)
 {
-	unsigned int		i;
-	char				*str1;
-	const char			*str2 = src;
+	unsigned int			i;
+	char					*str1;
+	const char				*str2 = src;
 
 	i = 0;
 	str1 = dest;
@@ -32,14 +31,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 /*
 int main ()
 {
-	const char src[50] = "Byeee!!";
+	 char src[50] = "Byeee!!";
 	char dest[50];
 	strcpy(dest,"Helloooo!!");
 	printf("Before memcpy dest = %s\n", dest);
 	memcpy(dest, src, 20);
 	printf("After memcpy dest = %s\n", dest);
 
-	const char src1[50] = "Byeee!!";
+	 char src1[50] = "Byeee!!";
 	char dest1[50];
 	strcpy(dest1,"Helloooo!!");
 	printf("Before ft_memcpy dest = %s\n", dest1);

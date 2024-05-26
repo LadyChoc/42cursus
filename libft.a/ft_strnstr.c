@@ -9,10 +9,7 @@
 /*   Updated: 2024/05/20 19:15:10 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include <stddef.h>
-#include <string.h>
-// #include <bsd/string.h>
+#include "libft.h"
 
 int	check_word(char *str, char *to_find, unsigned int i, size_t n)
 {

@@ -9,11 +9,9 @@
 /*   Updated: 2024/04/24 13:57:39 by sarroyo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memmove(void *str1, const void *str2, size_t n)
+void	*ft_memmove(void *str1, void *str2, size_t n)
 {
 	unsigned int		i;
 	char				*dest;
@@ -45,7 +43,7 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 int main () {
 	// Que n sea más grande que src/dest
 	char dest[]  = "oldstring";
-	const char src[]  = "newstring";
+	 char src[]  = "newstring";
 
 	printf("Before ftmemmove dest = %s, src = %s\n", dest, src);
 	ft_memmove(dest, src, 30);
